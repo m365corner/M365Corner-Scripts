@@ -1,0 +1,44 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# PowerShell specific
+*.ps1xml
+*.psd1
+*.psm1
+*.clixml
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Node (if ever used)
+node_modules/
+
+# Package files
+package-lock.json
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Cache
+*.cache
+
+# ZIP files (optional, remove if you plan to upload packaged scripts)
+*.zip
+
+# EXE files (optional)
+*.exe
