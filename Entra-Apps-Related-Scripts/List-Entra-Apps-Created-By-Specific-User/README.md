@@ -88,7 +88,7 @@ Below is a sample output of the script execution:
 
 
 
-!\[Sample Output](demo.png)
+<img src="demo.png"/>
 
 
 
