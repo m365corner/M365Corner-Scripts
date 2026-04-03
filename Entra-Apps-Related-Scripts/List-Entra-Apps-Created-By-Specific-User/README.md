@@ -1,4 +1,4 @@
-\# List Entra Apps Created by a Specific User
+<h1>List Entra Apps Created by a Specific User</h1>
 
 
 
@@ -10,7 +10,7 @@ This script helps administrators identify all Microsoft Entra applications creat
 
 
 
-\## 📌 Overview
+\## 📌 <h2>Overview</h2>
 
 
 
@@ -34,7 +34,7 @@ This script enables you to:
 
 
 
-\## 🚀 Features
+\## 🚀 <h2>Features</h2>
 
 
 
@@ -50,7 +50,7 @@ This script enables you to:
 
 
 
-\## 🛠 Prerequisites
+\## 🛠 <h2>Prerequisites</h2>
 
 
 
@@ -58,21 +58,17 @@ This script enables you to:
 
 \- Required permissions:
 
-&#x20; - `Application.Read.All`
+  - Application.Read.All`
 
-&#x20; - `Directory.Read.All`
+  - Directory.Read.All`
 
 
 
 Connect using:
 
-
-
-```powershell
-
 Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
-```
+
 
 
 
@@ -80,7 +76,7 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 
 
-\## 📊 Sample Output
+📊 <h2>Sample Output</h2>
 
 
 
@@ -100,7 +96,7 @@ Below is a sample output of the script execution:
 
 
 
-\## 🎯 Use Cases
+\## 🎯  <h2>Use Cases </h2>
 
 
 
@@ -118,7 +114,7 @@ Below is a sample output of the script execution:
 
 
 
-\## 🌐 Detailed Guide
+\## 🌐  <h2>Detailed Guide </h2>
 
 
 
@@ -134,7 +130,7 @@ For full script, explanation, and enhancements:
 
 
 
-\## ⚠️ Notes
+\## ⚠️  <h2>Notes </h2>
 
 
 
@@ -150,7 +146,7 @@ For full script, explanation, and enhancements:
 
 
 
-\## ⭐ Support
+\## ⭐  <h2>Support </h2>
 
 
 
@@ -168,7 +164,7 @@ If you find this useful:
 
 
 
-\## 📌 About M365Corner
+\## 📌  <h2>About M365Corner </h2>
 
 
 
