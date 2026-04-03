@@ -156,19 +156,13 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 <p>
 
-For full script, explanation, and enhancements:
+For full script, explanation, and enhancements, view the detailed article on M365Corner: 👉 https://m365corner.com/m365-powershell/list-entra-apps-with-no-assigned-roles.html
 
 </p>
 
 
 
 <p>
-
-👉 <a href="https://m365corner.com/m365-powershell/list-entra-apps-with-no-assigned-roles.html" target="\_blank">
-
-View Detailed Article on M365Corner
-
-</a>
 
 </p>
 
