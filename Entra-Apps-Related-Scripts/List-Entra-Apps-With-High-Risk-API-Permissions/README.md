@@ -156,19 +156,12 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 <p>
 
-For full script, explanation, and enhancements:
+For full script, explanation, and enhancements, View Detailed Article on M365Corner 👉 :https://m365corner.com/m365-powershell/find-entra-id-applications-with-high-risk-API-permissions.html
 
 </p>
 
 
 
-<p>
-
-👉 <a href="https://m365corner.com/m365-powershell/find-entra-id-applications-with-high-risk-API-permissions.html" target="\_blank">
-
-View Detailed Article on M365Corner
-
-</a>
 
 </p>
 
