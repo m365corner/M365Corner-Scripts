@@ -156,23 +156,9 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 <p>
 
-For full script, explanation, and enhancements:
+For full script, explanation, and enhancements, View the Detailed Article on M365Corner 👉 : https://m365corner.com/m365-powershell/list-expiring-or-expired-entra-app-secrets.html
 
 </p>
-
-
-
-<p>
-
-👉 <a href="https://m365corner.com/m365-powershell/list-expiring-or-expired-entra-app-secrets.html" target="\_blank">
-
-View Detailed Article on M365Corner
-
-</a>
-
-</p>
-
-
 
 <hr>
 
