@@ -1,4 +1,4 @@
-\# List Entra App Owners using Graph PowerShell
+<h1>List Entra App Owners using Graph PowerShell</h1>
 
 
 
@@ -10,7 +10,7 @@ This script retrieves all Microsoft Entra applications along with their assigned
 
 
 
-\## 📌 Overview
+\## 📌 <h2>Overview</h2>
 
 
 
@@ -34,7 +34,7 @@ This script helps administrators:
 
 
 
-\## 🚀 Features
+\## 🚀  <h2>Features </h2>
 
 
 
@@ -52,7 +52,7 @@ This script helps administrators:
 
 
 
-\## 🛠 Prerequisites
+\## 🛠  <h2>Prerequisites </h2>
 
 
 
@@ -60,101 +60,25 @@ This script helps administrators:
 
 \- Required permissions:
 
-&#x20; - `Application.Read.All`
+ - Application.Read.All
 
-&#x20; - `Directory.Read.All`
-
-
-
-Connect using:
+ - Directory.Read.All
 
 
 
-```powershell
-
-Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
-
-```
-
-
-
-\---
-
-
-
-\## 📜 Script
-
-
-
-```powershell
-
-\# Connect to Microsoft Graph
+Connect using powershell:
 
 Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 
 
-\# Retrieve all applications
-
-$Apps = Get-MgApplication -All
 
 
-
-$Results = @()
+\## <h2>📊 Sample Output</h2>
 
 
 
-foreach ($App in $Apps) {
-
-&#x20;   $Owners = Get-MgApplicationOwner -ApplicationId $App.Id
-
-
-
-&#x20;   if ($Owners) {
-
-&#x20;       foreach ($Owner in $Owners) {
-
-&#x20;           $Results += \[PSCustomObject]@{
-
-&#x20;               AppName        = $App.DisplayName
-
-&#x20;               AppId          = $App.AppId
-
-&#x20;               OwnerName      = $Owner.AdditionalProperties.displayName
-
-&#x20;               OwnerUPN       = $Owner.AdditionalProperties.userPrincipalName
-
-&#x20;           }
-
-&#x20;       }
-
-&#x20;   }
-
-&#x20;   else {
-
-&#x20;       $Results += \[PSCustomObject]@{
-
-&#x20;           AppName   = $App.DisplayName
-
-&#x20;           AppId     = $App.AppId
-
-&#x20;           OwnerName = "No Owner"
-
-&#x20;           OwnerUPN  = "N/A"
-
-&#x20;       }
-
-&#x20;   }
-
-}
-
-
-
-\# Output results
-
-$Results | Format-Table -AutoSize
-
-```
+<img src="demo.png"/>
 
 
 
@@ -162,23 +86,7 @@ $Results | Format-Table -AutoSize
 
 
 
-\## 📊 Sample Output
-
-
-
-| AppName | AppId | OwnerName | OwnerUPN |
-
-|--------|------|----------|----------|
-
-| Sample App | xxxxxxxx | John Doe | john@domain.com |
-
-
-
-\---
-
-
-
-\## 🎯 Use Cases
+\## 🎯 <h2>Use Cases</h2>
 
 
 
@@ -196,7 +104,7 @@ $Results | Format-Table -AutoSize
 
 
 
-\## 🌐 Detailed Guide
+\## 🌐 <h2>Detailed Guide</h2>
 
 
 
@@ -212,7 +120,7 @@ For a complete walkthrough, explanation, and enhancements:
 
 
 
-\## ⚠️ Notes
+\## <h2>⚠️ Notes</h2>
 
 
 
@@ -228,7 +136,7 @@ For a complete walkthrough, explanation, and enhancements:
 
 
 
-\## 🤝 Contributing
+\## <h2>🤝 Contributing</h2>
 
 
 
@@ -240,7 +148,7 @@ Suggestions and improvements are welcome as this repository evolves.
 
 
 
-\## ⭐ Support
+\## <h2>⭐ Support</h2>
 
 
 
@@ -258,7 +166,7 @@ If you find this useful:
 
 
 
-\## 📌 About M365Corner
+\## 📌 <h2>About M365Corner</h2>
 
 
 
