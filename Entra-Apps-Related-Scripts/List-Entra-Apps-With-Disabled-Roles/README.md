@@ -158,7 +158,7 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All","User.Read.A
 
 <p>
 
-For full script, explanation, and enhancements:
+For full script, explanation, and enhancements, view the detailed article on M365Corner 👉: https://m365corner.com/m365-powershell/list-entra-apps-with-disabled-users-using-graph-powershell.html. 
 
 </p>
 
@@ -166,11 +166,6 @@ For full script, explanation, and enhancements:
 
 <p>
 
-👉 <a href="https://m365corner.com/m365-powershell/list-entra-apps-with-disabled-users-using-graph-powershell.html" target="\_blank">
-
-View Detailed Article on M365Corner
-
-</a>
 
 </p>
 
