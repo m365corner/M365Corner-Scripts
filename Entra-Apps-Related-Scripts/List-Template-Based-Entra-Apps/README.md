@@ -184,9 +184,8 @@ For full script, explanation, and enhancements:
 
 <p>
 
-👉 <a href="https://m365corner.com/m365-powershell/list-template-based-entra-apps-using-powershell.html" target="\_blank">
 
-View Detailed Article on M365Corner
+View Detailed Article on M365Corner:  https://m365corner.com/m365-powershell/list-template-based-entra-apps-using-powershell.html
 
 </a>
 
