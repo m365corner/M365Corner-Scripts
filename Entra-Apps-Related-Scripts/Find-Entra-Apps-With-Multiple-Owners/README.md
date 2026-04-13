@@ -85,6 +85,17 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 <hr>
 
+
+<h2>🌐 Detailed Guide</h2>
+
+<p>
+For full script, explanation, and enhancements: <br/>
+View Detailed Article on M365Corner👉 https://m365corner.com/m365-powershell/find-entra-apps-with-multiple-owners-using-powershell.html
+</a>
+</p>
+
+<hr>
+
 <h2>⚠️ Notes</h2>
 
 <ul>
