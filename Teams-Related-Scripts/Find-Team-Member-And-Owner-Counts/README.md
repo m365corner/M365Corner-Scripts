@@ -109,6 +109,8 @@ Connect-MgGraph -Scopes "Group.Read.All","Directory.Read.All"
 For full script, explanation, and enhancements:
 View Detailed Article on M365Corner👉 https://m365corner.com/m365-powershell/find-teams-member-and-owner-counts.html
 
+
+
 <hr>
 
 <h2>⭐ Support</h2>
