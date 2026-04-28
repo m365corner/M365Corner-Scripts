@@ -208,7 +208,11 @@ Connect-MgGraph -Scopes "User.Read.All","Directory.Read.All"
 
 </ul>
 
+<hr>
 
+🌐 Detailed Guide
+For full script, explanation, and enhancements:
+View Detailed Article on M365Corner👉 https://m365corner.com/m365-powershell/fetch-licensed-guest-users-using-graph-powershell.html
 
 <hr>
 

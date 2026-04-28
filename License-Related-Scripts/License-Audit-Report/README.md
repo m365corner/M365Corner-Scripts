@@ -226,6 +226,12 @@ Connect-MgGraph -Scopes "User.Read.All","Organization.Read.All"
 
 <hr>
 
+🌐 Detailed Guide
+For full script, explanation, and enhancements:
+View Detailed Article on M365Corner👉 https://m365corner.com/m365-powershell/microsoft-365-license-audit-report-with-powershell.html
+
+<hr>
+
 
 
 <h2>⭐ Support</h2>

@@ -108,6 +108,13 @@ Connect-MgGraph -Scopes "User.ReadWrite.All","Organization.Read.All","AuditLog.R
 
 <hr>
 
+🌐 Detailed Guide
+For full script, explanation, and enhancements:
+View Detailed Article on M365Corner👉 https://m365corner.com/m365-powershell/30-day-license-reclaimer-for-disabled-users-graph-PS.html
+
+<hr>
+
+
 <h2>⭐ Support</h2>
 
 <p>If you find this useful:</p>
