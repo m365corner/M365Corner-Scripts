@@ -2,13 +2,13 @@
 
 
 
-<h1>Find Disabled Entra Service Principals</h1>
+<h1>Find Disabled Entra Service Principals With No Owners</h1>
 
 
 
 <p>
 
-This script helps administrators identify <b>disabled Microsoft Entra Service Principals</b> using Microsoft Graph PowerShell.
+This script helps administrators identify <b>disabled Microsoft Entra Service Principals that have no assigned owners</b> using Microsoft Graph PowerShell.
 
 </p>
 
@@ -24,7 +24,7 @@ This script helps administrators identify <b>disabled Microsoft Entra Service Pr
 
 <p>
 
-Disabled Service Principals may indicate deprecated applications, unused integrations, or cleanup candidates. Regular review helps maintain a clean and secure Entra environment.
+Service Principals that are both <b>disabled</b> and <b>unowned</b> are typically safe candidates for cleanup and removal, as they are unlikely to be actively used or maintained.
 
 </p>
 
@@ -36,9 +36,11 @@ Disabled Service Principals may indicate deprecated applications, unused integra
 
 <li>Identify disabled Service Principals</li>
 
-<li>Review application lifecycle status</li>
+<li>Detect Service Principals without owners</li>
 
-<li>Support cleanup and governance initiatives</li>
+<li>Pinpoint cleanup candidates</li>
+
+<li>Improve tenant hygiene and governance</li>
 
 </ul>
 
@@ -58,7 +60,9 @@ Disabled Service Principals may indicate deprecated applications, unused integra
 
 <li>Filters only disabled Service Principals</li>
 
-<li>Captures key attributes such as AppId, Publisher, and Tags</li>
+<li>Checks for absence of assigned owners</li>
+
+<li>Identifies cleanup candidates</li>
 
 <li>Exports results to CSV for reporting</li>
 
@@ -80,11 +84,13 @@ Disabled Service Principals may indicate deprecated applications, unused integra
 
 <li>Microsoft Graph PowerShell module</li>
 
-<li>Required permission:
+<li>Required permissions:
 
 &#x20;   <ul>
 
 &#x20;       <li><code>Application.Read.All</code></li>
+
+&#x20;       <li><code>Directory.Read.All</code></li>
 
 &#x20;   </ul>
 
@@ -100,7 +106,7 @@ Disabled Service Principals may indicate deprecated applications, unused integra
 
 <pre>
 
-Connect-MgGraph -Scopes "Application.Read.All"
+Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 </pre>
 
@@ -116,7 +122,7 @@ Connect-MgGraph -Scopes "Application.Read.All"
 
 <ul>
 
-<li><code>find-disabled-entra-service-principals.ps1</code> — PowerShell script</li>
+<li><code>find-disabled-entra-service-principals-with-no-owners.ps1</code> — PowerShell script</li>
 
 <li><code>README.md</code> — Script overview and usage notes</li>
 
@@ -138,7 +144,7 @@ Connect-MgGraph -Scopes "Application.Read.All"
 
 
 
-<img src="demo.png" alt="Disabled Entra Service Principals Output" width="800"/>
+<img src="demo.png" alt="Disabled Service Principals With No Owners Output" width="800"/>
 
 
 
@@ -156,13 +162,13 @@ Connect-MgGraph -Scopes "Application.Read.All"
 
 <ul>
 
-<li>Identify inactive or deprecated applications</li>
+<li>Identify safe cleanup candidates</li>
 
-<li>Support application lifecycle management</li>
+<li>Remove unused or orphaned Service Principals</li>
 
-<li>Clean up unused Service Principals</li>
+<li>Improve Entra tenant hygiene</li>
 
-<li>Improve Entra governance and hygiene</li>
+<li>Support governance and audit activities</li>
 
 </ul>
 
@@ -186,11 +192,31 @@ For full script, explanation, and enhancements:
 
 <p>
 
-👉 <a href="https://m365corner.com/m365-powershell/find-disabled-entra-service-principals-using-powershell.html" target="\_blank">
+👉 <https://m365corner.com/m365-powershell/find-disabled-entra-service-principals-with-no-owners.html</p>
 
-View Detailed Article on M365Corner
 
-</a>
+
+<hr>
+
+
+
+<h2>⚠️ Risk Classification</h2>
+
+
+
+<ul>
+
+<li><b>Disabled</b> → Not actively used</li>
+
+<li><b>No Owner</b> → No accountability</li>
+
+</ul>
+
+
+
+<p>
+
+👉 Combined classification: <b>Cleanup Candidate</b>
 
 </p>
 
@@ -206,11 +232,11 @@ View Detailed Article on M365Corner
 
 <ul>
 
-<li>Disabled Service Principals are not actively used but still exist in the tenant</li>
+<li>Always validate before deletion to avoid breaking dependencies</li>
 
-<li>Review before deletion to avoid breaking dependencies</li>
+<li>Some Service Principals may still be required for legacy integrations</li>
 
-<li>Combine with inventory and ownership scripts for deeper analysis</li>
+<li>Best used as part of periodic cleanup activities</li>
 
 </ul>
 
