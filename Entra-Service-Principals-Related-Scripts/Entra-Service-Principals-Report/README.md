@@ -92,9 +92,8 @@ For full script, explanation, and enhancements:
 </p>
 
 <p>
-👉 <a href="https://m365corner.com/m365-powershell/generate-entra-service-principals-report-using-powershell.html" target="_blank">
-View Detailed Article on M365Corner
-</a>
+👉  View Detailed Article on M365Corner: https://m365corner.com/m365-powershell/generate-entra-service-principals-report-using-powershell.html
+
 </p>
 
 <hr>
