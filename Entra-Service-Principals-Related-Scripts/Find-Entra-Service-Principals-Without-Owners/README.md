@@ -182,17 +182,11 @@ Connect-MgGraph -Scopes "Application.Read.All","Directory.Read.All"
 
 For full script, explanation, and enhancements:
 
-</p>
-
-
-
-<p>
-
-👉 <a href="https://m365corner.com/m365-powershell/find-entra-service-principals-without-owners-using-powershell.html" target="\_blank">
+https://m365corner.com/m365-powershell/find-entra-service-principals-without-owners-using-powershell.html" target="\_blank">
 
 View Detailed Article on M365Corner
 
-</a>
+
 
 </p>
 
